@@ -11,17 +11,17 @@ def get_data(id=None):
     r = requests.get(url = URL , data = json_data)
     data = r.json()
     print(data)
-get_data()
+#get_data()
 
 
 def post_data():
     data = {
-        'name':'yuvraj',
-        'roll': 107,
-        'city':'Delhi'
+        'name':'Shreekrishna',
+        'roll': 108,
+        'city':'Manipur'
     }
     json_data = json.dumps(data)
     r = requests.post(url = URL , data = json_data)
     data = r.json()
     print(data)
-#post_data()
+post_data()
